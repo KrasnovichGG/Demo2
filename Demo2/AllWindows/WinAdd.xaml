@@ -1,0 +1,109 @@
+﻿<Window
+    x:Class="Demo2.AllWindows.WinAdd"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Demo2.AllWindows"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Добавление Бумаги"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <TextBox
+            x:Name="TbName"
+            Width="120"
+            Margin="164,90,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            TextWrapping="Wrap" />
+        <ComboBox
+            x:Name="cmbTypeProduct"
+            Width="120"
+            Margin="164,360,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            DisplayMemberPath="Title" />
+        <TextBox
+            x:Name="TbArt"
+            Width="120"
+            Margin="164,156,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            TextWrapping="Wrap" />
+        <Border
+            Width="100"
+            Height="100"
+            Margin="573,174,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            BorderBrush="Black"
+            BorderThickness="2">
+            <Image x:Name="imageBym" />
+        </Border>
+
+        <TextBox
+            x:Name="TbMinCost"
+            Width="120"
+            Margin="164,217,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="TbCountPeople"
+            Width="120"
+            Margin="164,290,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            TextWrapping="Wrap" />
+        <Label
+            Margin="178,59,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Наименование" />
+        <Label
+            Margin="197,130,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Артикул" />
+        <Label
+            Margin="135,191,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Минимальная цена для агента" />
+        <Label
+            Margin="117,264,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Количество людей для производства" />
+        <TextBox
+            x:Name="TbNumerCex"
+            Width="120"
+            Margin="371,85,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            TextWrapping="Wrap" />
+        <Label
+            Margin="393,59,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Номер цеха" />
+        <Label
+            Margin="176,334,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Тип Продукции" />
+        <Button
+            Width="225"
+            Height="49"
+            Margin="371,360,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Добавить" Click="Button_Click_1" />
+        <Button
+            Margin="598,289,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Выбрать" Click="Button_Click" />
+    </Grid>
+</Window>
